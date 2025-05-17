@@ -1,4 +1,4 @@
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -8,8 +8,7 @@ import { generateBatchFile } from '@/app/actions/generateBatchFile'
 export default async function BatchDetailPage(props) {
   const params = await props.params
 
-  const client = await clientPromise
-  const db = client.db()
+  const db = await getDb()
   const batch = await db.collection('batches').findOne({ _id: new ObjectId(params.id) })
 
   const grid = Array.from({ length: batch.rows }, () => Array(batch.cols).fill(null))

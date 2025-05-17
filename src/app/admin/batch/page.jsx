@@ -1,17 +1,13 @@
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import clientPromise from "@/lib/db/db";
-
-
+import { getDb } from '@/lib/db/db'
 
 export default async function AdminDashboardPage() {
   let batches
 
-  const client = await clientPromise
-    const db = client.db()
-    batches = await db.collection('batches').find({}).sort({ createdAt: -1 }).limit(10).toArray()
-
+  const db = await getDb()
+  batches = await db.collection('batches').find({}).sort({ createdAt: -1 }).limit(10).toArray()
 
   return (
     <main className="p-6 space-y-4">

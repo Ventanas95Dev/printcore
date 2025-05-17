@@ -1,7 +1,5 @@
-// app/api/webhooks/stripe/route.js
-
 import Stripe from 'stripe'
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET)
 
@@ -29,7 +27,7 @@ export async function POST(req) {
     const orderId = session.metadata?.orderId
 
     if (orderId) {
-      const db = await clientPromise
+      const db = await getDb()
       const orders = db.collection('orders')
 
       await orders.updateOne(

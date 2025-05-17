@@ -1,6 +1,6 @@
 'use server'
 
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 import { ObjectId } from 'mongodb'
 
 export async function generateBatchFile(batchId) {
@@ -8,8 +8,7 @@ export async function generateBatchFile(batchId) {
     throw new Error('Missing batchId')
   }
 
-  const client = await clientPromise
-  const db = client.db()
+  const db = await getDb()
   const batch = await db.collection('batches').findOne({ _id: new ObjectId(batchId) })
 
   if (!batch) {

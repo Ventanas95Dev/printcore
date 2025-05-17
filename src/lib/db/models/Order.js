@@ -1,4 +1,4 @@
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 
 export function createOrderDocument({ designId, imageUrl, customerName, platformOrderId }) {
   return {
@@ -12,8 +12,7 @@ export function createOrderDocument({ designId, imageUrl, customerName, platform
 }
 
 export async function saveOrder(data) {
-  const client = await clientPromise
-  const db = client.db()
+  const db = await getDb()
 
   const doc = createOrderDocument(data)
   const result = await db.collection('orders').insertOne(doc)

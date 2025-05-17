@@ -1,28 +1,33 @@
 import { NextResponse } from 'next/server'
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
+import { randomUUID } from 'crypto'
 
 export async function POST(req) {
   const body = await req.json()
 
-  if (!body || !body.items || !Array.isArray(body.items)) {
+  if (!body?.items || !Array.isArray(body.items) || body.items.length === 0) {
     return NextResponse.json({ error: 'Invalid order payload' }, { status: 400 })
   }
+
+  const now = new Date()
 
   const order = {
     customerName: body.customerName || 'Unknown',
     platformOrderId: body.platformOrderId || null,
     status: 'queued',
-    createdAt: new Date(),
+    paymentStatus: 'unpaid',
+    renderStatus: 'pending',
+    editorPreviewUrl: body.editorPreviewUrl || null,
+    createdAt: now,
+    updatedAt: now,
     items: body.items.map((item) => ({
-      designId: item.designId,
-      imageUrl: item.imageUrl,
+      designId: randomUUID(),
       quantity: item.quantity || 1,
     })),
   }
 
   try {
-    const client = await clientPromise
-    const db = client.db()
+    const db = await getDb()
     const result = await db.collection('orders').insertOne(order)
 
     return NextResponse.json({
@@ -34,3 +39,4 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Server error' }, { status: 500 })
   }
 }
+

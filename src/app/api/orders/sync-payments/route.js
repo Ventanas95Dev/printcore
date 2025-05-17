@@ -1,14 +1,14 @@
 import Stripe from 'stripe'
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 import { ObjectId } from 'mongodb'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET)
 
-export async function POST(request) {
-  const db = await clientPromise
+export async function POST(req) {
+  const db = await getDb()
   const orders = db.collection('orders')
 
-  const body = await request.json()
+  const body = await req.json()
   const fromDate = body?.fromDate ? new Date(body.fromDate) : null
 
   const unpaidOrders = await orders.find({ paymentStatus: { $ne: 'paid' } }).toArray()

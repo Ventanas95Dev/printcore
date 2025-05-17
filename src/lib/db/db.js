@@ -8,6 +8,7 @@ if (!uri) {
 
 let client
 let clientPromise
+let dbInstance = null
 
 // In development mode, use a global variable so that the value
 // is preserved across module reloads caused by HMR (Hot Module Replacement).
@@ -23,4 +24,17 @@ if (process.env.NODE_ENV === 'development') {
   clientPromise = client.connect()
 }
 
-export default clientPromise
+export async function getDb() {
+  if (!clientPromise) {
+    throw new Error(
+      'MongoDB client is not initialized. Make sure NEXT_PUBLIC_LIVE_PREVIEW and MONGODB_URI are set.'
+    )
+  }
+
+  if (dbInstance) return dbInstance
+
+  const client = await clientPromise
+  dbInstance = client.db(process.env.MONGODB_DB_NAME)
+  return dbInstance
+}
+

@@ -1,13 +1,11 @@
-// app/api/create-checkout/route.js
-
 import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET)
 
-export async function POST(request) {
-  const { orderId, designId } = await request.json()
+export async function POST(req) {
+  const { orderId } = await req.json()
 
-  if (!orderId || !designId) {
+  if (!orderId) {
     return new Response(JSON.stringify({ error: 'Missing data' }), { status: 400 })
   }
 
@@ -28,7 +26,6 @@ export async function POST(request) {
     ],
     metadata: {
       orderId,
-      designId,
     },
     success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/thank-you?orderId=${orderId}`,
     cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/editor?cancelled=true`,

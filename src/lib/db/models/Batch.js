@@ -1,4 +1,4 @@
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 
 export function createBatchDocument({ items }) {
   const rows = Math.ceil(items.length / 6)
@@ -22,8 +22,7 @@ export function createBatchDocument({ items }) {
 
 export async function createBatchFromOrders(orders) {
   const batchDoc = createBatchDocument({ items: orders })
-  const client = await clientPromise
-  const db = client.db()
+  const db = await getDb()
   const result = await db.collection('batches').insertOne(batchDoc)
 
   // Mark orders as batched

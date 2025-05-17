@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 
 export async function POST(req) {
   try {
@@ -10,8 +10,7 @@ export async function POST(req) {
     // 🔁 Hämta nya ordrar från e-commerce (mockad här)
     const fetchedOrders = await mockFetchFromShopify({ since: sinceDate })
 
-    const client = await clientPromise
-    const db = client.db()
+    const db = await getDb()
 
     let imported = 0
 

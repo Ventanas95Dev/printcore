@@ -14,24 +14,23 @@ import { CalendarIcon, SearchIcon } from 'lucide-react'
 import { CreateBatchButton } from '@/components/CreateBatchsButtons'
 import { SyncOrdersButton } from '@/components/SyncOrdersButton'
 import { SyncPaymentsButton } from '@/components/SyncPaymentsButton'
-import clientPromise from '@/lib/db/db'
+import { getDb } from '@/lib/db/db'
 import { ObjectId } from 'mongodb'
 
 // This is a Server Component, so we can fetch data directly
 export default async function AdminOrdersPage() {
   // Connect to MongoDB and fetch orders
-  const client = await clientPromise
-  const db = client.db()
+  const db = await getDb()
   const ordersCollection = db.collection('orders')
-  
+
   // Fetch all orders and sort by creation date (newest first)
   const ordersData = await ordersCollection.find({}).sort({ createdAt: -1 }).toArray()
-  
+
   // Convert MongoDB documents to plain objects and handle ObjectId
-  const orders = ordersData.map(order => ({
+  const orders = ordersData.map((order) => ({
     ...order,
     _id: order._id.toString(),
-    createdAt: order.createdAt instanceof Date ? order.createdAt : new Date(order.createdAt)
+    createdAt: order.createdAt instanceof Date ? order.createdAt : new Date(order.createdAt),
   }))
 
   // Format date to readable string
@@ -121,23 +120,24 @@ export default async function AdminOrdersPage() {
               </CardHeader>
               <CardContent className="p-4">
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                  {order.items && order.items.map((item, i) => (
-                    <div key={i} className="group relative">
-                      <div className="overflow-hidden rounded-md border bg-background">
-                        <img
-                          src={item.imageUrl}
-                          alt={item.designId}
-                          className="h-auto w-full object-cover aspect-[6/5] group-hover:scale-105 transition-transform duration-300"
-                        />
+                  {order.items &&
+                    order.items.map((item, i) => (
+                      <div key={i} className="group relative">
+                        <div className="overflow-hidden rounded-md border bg-background">
+                          <img
+                            src={item.imageUrl}
+                            alt={item.designId}
+                            className="h-auto w-full object-cover aspect-[6/5] group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <div className="flex items-center justify-between mt-2">
+                          <p className="text-xs font-medium truncate">{item.designId}</p>
+                          <Badge variant="outline" className="text-xs">
+                            Qty: {item.quantity}
+                          </Badge>
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between mt-2">
-                        <p className="text-xs font-medium truncate">{item.designId}</p>
-                        <Badge variant="outline" className="text-xs">
-                          Qty: {item.quantity}
-                        </Badge>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
               </CardContent>
               <CardFooter className="p-4 pt-0 flex justify-end">
@@ -176,23 +176,24 @@ export default async function AdminOrdersPage() {
                 </CardHeader>
                 <CardContent className="p-4">
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                    {order.items && order.items.map((item, i) => (
-                      <div key={i} className="group relative">
-                        <div className="overflow-hidden rounded-md border bg-background">
-                          <img
-                            src={item.imageUrl}
-                            alt={item.designId}
-                            className="h-auto w-full object-cover aspect-[6/5] group-hover:scale-105 transition-transform duration-300"
-                          />
+                    {order.items &&
+                      order.items.map((item, i) => (
+                        <div key={i} className="group relative">
+                          <div className="overflow-hidden rounded-md border bg-background">
+                            <img
+                              src={item.imageUrl}
+                              alt={item.designId}
+                              className="h-auto w-full object-cover aspect-[6/5] group-hover:scale-105 transition-transform duration-300"
+                            />
+                          </div>
+                          <div className="flex items-center justify-between mt-2">
+                            <p className="text-xs font-medium truncate">{item.designId}</p>
+                            <Badge variant="outline" className="text-xs">
+                              Qty: {item.quantity}
+                            </Badge>
+                          </div>
                         </div>
-                        <div className="flex items-center justify-between mt-2">
-                          <p className="text-xs font-medium truncate">{item.designId}</p>
-                          <Badge variant="outline" className="text-xs">
-                            Qty: {item.quantity}
-                          </Badge>
-                        </div>
-                      </div>
-                    ))}
+                      ))}
                   </div>
                 </CardContent>
                 <CardFooter className="p-4 pt-0 flex justify-end">
