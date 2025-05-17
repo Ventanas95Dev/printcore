@@ -5,7 +5,7 @@ import { randomUUID } from 'crypto'
 export async function POST(req) {
   const body = await req.json()
 
-  if (!body?.items || !Array.isArray(body.items) || body.items.length === 0) {
+  if (!body?.items) {
     return NextResponse.json({ error: 'Invalid order payload' }, { status: 400 })
   }
 
@@ -20,10 +20,11 @@ export async function POST(req) {
     editorPreviewUrl: body.editorPreviewUrl || null,
     createdAt: now,
     updatedAt: now,
-    items: body.items.map((item) => ({
-      designId: randomUUID(),
-      quantity: item.quantity || 1,
-    })),
+    items:
+      body?.items?.map((item) => ({
+        designId: randomUUID(),
+        quantity: item.quantity || 1,
+      })) || [],
   }
 
   try {
@@ -39,4 +40,3 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Server error' }, { status: 500 })
   }
 }
-

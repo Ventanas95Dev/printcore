@@ -33,6 +33,11 @@ export default async function AdminOrdersPage() {
     createdAt: order.createdAt instanceof Date ? order.createdAt : new Date(order.createdAt),
   }))
 
+  // get latest paid order date
+  const latestPaidOrder = orders.find((order) => order.paymentStatus === 'paid')
+  const yesterdayData = new Date(new Date().getTime() - 1000 * 60 * 60 * 24)
+  const latestPaidOrderDate = latestPaidOrder ? latestPaidOrder.createdAt : yesterdayData
+
   // Format date to readable string
   const formatDate = (date) => {
     return new Intl.DateTimeFormat('en-US', {
@@ -66,7 +71,8 @@ export default async function AdminOrdersPage() {
         <h1 className="text-3xl font-bold tracking-tight">Orders</h1>
 
         <div>
-          <CreateBatchButton /> <SyncOrdersButton /> <SyncPaymentsButton />
+          <CreateBatchButton /> <SyncOrdersButton />{' '}
+          <SyncPaymentsButton fromDate={latestPaidOrderDate} />
         </div>
       </div>
 

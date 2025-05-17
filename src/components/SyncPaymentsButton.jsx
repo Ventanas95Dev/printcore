@@ -1,8 +1,10 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
-export function SyncPaymentsButton() {
+export function SyncPaymentsButton({ fromDate }) {
+  const router = useRouter()
   const [isSyncing, setIsSyncing] = useState(false)
   const [message, setMessage] = useState(null)
 
@@ -36,12 +38,17 @@ export function SyncPaymentsButton() {
 
     setMessage(`✅ Sync complete. ${totalUpdated} orders updated.`)
     setIsSyncing(false)
+    router.refresh()
+
+    setTimeout(() => {
+      setMessage(null)
+    }, 5000)
   }
 
   return (
     <div className="space-y-2">
       <button
-        onClick={() => syncPaymentsUntilDone()}
+        onClick={() => syncPaymentsUntilDone({ fromDate, delayMs: 1000 })}
         disabled={isSyncing}
         className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50"
       >
