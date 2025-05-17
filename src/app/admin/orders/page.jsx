@@ -11,13 +11,28 @@ import {
 } from '@/components/ui/select'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { CalendarIcon, SearchIcon } from 'lucide-react'
-import { mockOrders } from '@/lib/mock'
 import { CreateBatchButton } from '@/components/CreateBatchsButtons'
 import { SyncOrdersButton } from '@/components/SyncOrdersButton'
 import { SyncPaymentsButton } from '@/components/SyncPaymentsButton'
+import clientPromise from '@/lib/db/db'
+import { ObjectId } from 'mongodb'
 
-export default function AdminOrdersPage() {
-  const orders = mockOrders
+// This is a Server Component, so we can fetch data directly
+export default async function AdminOrdersPage() {
+  // Connect to MongoDB and fetch orders
+  const client = await clientPromise
+  const db = client.db()
+  const ordersCollection = db.collection('orders')
+  
+  // Fetch all orders and sort by creation date (newest first)
+  const ordersData = await ordersCollection.find({}).sort({ createdAt: -1 }).toArray()
+  
+  // Convert MongoDB documents to plain objects and handle ObjectId
+  const orders = ordersData.map(order => ({
+    ...order,
+    _id: order._id.toString(),
+    createdAt: order.createdAt instanceof Date ? order.createdAt : new Date(order.createdAt)
+  }))
 
   // Format date to readable string
   const formatDate = (date) => {
@@ -106,7 +121,7 @@ export default function AdminOrdersPage() {
               </CardHeader>
               <CardContent className="p-4">
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                  {order.items.map((item, i) => (
+                  {order.items && order.items.map((item, i) => (
                     <div key={i} className="group relative">
                       <div className="overflow-hidden rounded-md border bg-background">
                         <img
@@ -161,7 +176,7 @@ export default function AdminOrdersPage() {
                 </CardHeader>
                 <CardContent className="p-4">
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                    {order.items.map((item, i) => (
+                    {order.items && order.items.map((item, i) => (
                       <div key={i} className="group relative">
                         <div className="overflow-hidden rounded-md border bg-background">
                           <img

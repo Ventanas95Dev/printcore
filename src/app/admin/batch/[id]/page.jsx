@@ -5,43 +5,12 @@ import { Button } from '@/components/ui/button'
 import { ObjectId } from 'mongodb'
 import { generateBatchFile } from '@/app/actions/generateBatchFile'
 
-const USE_MOCK = true
-
-const mockBatch = {
-  _id: 'mock001',
-  createdAt: new Date().toISOString(),
-  status: 'filling',
-  rows: 2,
-  cols: 6,
-  items: [
-    {
-      imageUrl: 'https://via.placeholder.com/200x170?text=Mikael',
-      customerName: 'Mikael',
-      position: { row: 0, col: 0 },
-    },
-    {
-      imageUrl: 'https://via.placeholder.com/200x170?text=Sofia',
-      customerName: 'Sofia',
-      position: { row: 0, col: 1 },
-    },
-    {
-      imageUrl: 'https://via.placeholder.com/200x170?text=Tom',
-      customerName: 'Tom',
-      position: { row: 1, col: 2 },
-    },
-  ],
-}
-
 export default async function BatchDetailPage(props) {
   const params = await props.params
 
-  const batch = USE_MOCK
-    ? mockBatch
-    : await (async () => {
-        const client = await clientPromise
-        const db = client.db()
-        return await db.collection('batches').findOne({ _id: new ObjectId(params.id) })
-      })()
+  const client = await clientPromise
+  const db = client.db()
+  const batch = await db.collection('batches').findOne({ _id: new ObjectId(params.id) })
 
   const grid = Array.from({ length: batch.rows }, () => Array(batch.cols).fill(null))
 

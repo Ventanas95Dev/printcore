@@ -1,33 +1,17 @@
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import clientPromise from "@/lib/db/db";
 
-// Toggle this flag to switch between mock and live
-const USE_MOCK = true
 
-const mockBatches = [
-  {
-    _id: { toString: () => 'mock001' },
-    createdAt: new Date(Date.now() - 1000 * 60 * 60),
-    status: 'filling',
-  },
-  {
-    _id: { toString: () => 'mock002' },
-    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 2),
-    status: 'ready',
-  },
-]
 
 export default async function AdminDashboardPage() {
   let batches
 
-  if (USE_MOCK) {
-    batches = mockBatches
-  } else {
-    const client = await (await import('@/lib/db')).default
+  const client = await clientPromise
     const db = client.db()
     batches = await db.collection('batches').find({}).sort({ createdAt: -1 }).limit(10).toArray()
-  }
+
 
   return (
     <main className="p-6 space-y-4">
