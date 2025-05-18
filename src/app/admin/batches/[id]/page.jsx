@@ -4,12 +4,16 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ObjectId } from 'mongodb'
 import { generateBatchFile } from '@/app/actions/generateBatchFile'
+import { notFound } from 'next/navigation'
 
 export default async function BatchDetailPage(props) {
   const params = await props.params
 
   const db = await getDb()
-  const batch = await db.collection('batches').findOne({ _id: new ObjectId(params.id) })
+  const batches = db.collection('batches')
+  const batch = await batches.findOne({ _id: new ObjectId(params.id) })
+
+  if (!batch) return notFound()
 
   const grid = Array.from({ length: batch.rows }, () => Array(batch.cols).fill(null))
 
@@ -18,19 +22,12 @@ export default async function BatchDetailPage(props) {
     grid[row][col] = item
   })
 
-  async function handleGenerateFile() {
-    'use server'
-    await generateBatchFile(batch._id)
-  }
-
   return (
     <main className="p-6 space-y-4">
       <h1 className="text-2xl font-bold">Batch: {params.id}</h1>
       <Badge variant="secondary">{batch.status}</Badge>
 
-      <form action={handleGenerateFile} className="mt-4">
-        <Button type="submit">Generate print file</Button>
-      </form>
+      <Button type="submit">Generate print file</Button>
 
       <div className="space-y-2">
         {grid.map((row, rowIndex) => (
@@ -41,11 +38,13 @@ export default async function BatchDetailPage(props) {
                 className="w-[200px] h-[170px] flex items-center justify-center relative"
               >
                 {item ? (
-                  <img
-                    src={item.imageUrl}
-                    alt={item.customerName}
-                    className="max-w-full max-h-full object-contain"
-                  />
+                  <a href={item.imageUrl} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={item.imageUrl}
+                      alt={item.customerName}
+                      className="max-w-full max-h-full object-contain hover:scale-105 transition-transform"
+                    />
+                  </a>
                 ) : (
                   <span className="text-gray-400">Empty</span>
                 )}

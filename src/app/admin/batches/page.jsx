@@ -1,7 +1,8 @@
-import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { getDb } from '@/lib/db/db'
+import { ELink } from '@/components/ELink'
+import { CreateBatchButton } from '@/components/CreateBatchsButtons'
 
 export default async function AdminDashboardPage() {
   let batches
@@ -12,12 +13,14 @@ export default async function AdminDashboardPage() {
   return (
     <main className="p-6 space-y-4">
       <h1 className="text-2xl font-bold">Batchöversikt</h1>
+      <CreateBatchButton />
+
       {batches.map((batch) => (
-        <Link key={batch._id.toString()} href={`/admin/batch/${batch._id}`}>
+        <ELink key={batch._id.toString()} href={`/admin/batches/${batch._id}`}>
           <Card className="hover:shadow-sm transition">
             <CardContent className="p-4 flex items-center justify-between">
               <div>
-                <p className="font-medium">Batch: {batch._id.toString().slice(-6)}</p>
+                <p className="font-medium">Batch: {batch?._id?.toString()}</p>
                 <p className="text-sm text-gray-500">
                   Skapad: {new Date(batch.createdAt).toLocaleString()}
                 </p>
@@ -25,7 +28,7 @@ export default async function AdminDashboardPage() {
               <Badge variant="secondary">{batch.status}</Badge>
             </CardContent>
           </Card>
-        </Link>
+        </ELink>
       ))}
     </main>
   )
