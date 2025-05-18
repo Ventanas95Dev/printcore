@@ -4,8 +4,10 @@ import { getDb } from '@/lib/db/db'
 import { ELink } from '@/components/ELink'
 import { CreateBatchButton } from '@/components/CreateBatchsButtons'
 
-export default async function AdminDashboardPage() {
+export default async function AdminDashboardPage(props) {
+  const params = await props.params
   let batches
+
 
   const db = await getDb()
   batches = await db.collection('batches').find({}).sort({ createdAt: -1 }).limit(10).toArray()
