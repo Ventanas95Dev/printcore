@@ -5,6 +5,8 @@ import { randomUUID } from 'crypto'
 import { generateImageBuffer } from '@/helpers/generateImageBuffer'
 import { uploadToS3 } from '@/helpers/uploadToS3'
 
+export const maxDuration = 900; // This function can run for a maximum of 5 seconds
+
 export async function POST(req) {
   try {
     const { items, orderId } = await req.json()
