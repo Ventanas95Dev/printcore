@@ -3,9 +3,12 @@ import { Badge } from '@/components/ui/badge'
 import { getDb } from '@/lib/db/db'
 import { ELink } from '@/components/ELink'
 import { CreateBatchButton } from '@/components/CreateBatchsButtons'
+import { cookies } from 'next/headers'
 
 export default async function AdminDashboardPage(props) {
   const params = await props.params
+  const cookieStore = await cookies()
+
   let batches
 
 
