@@ -2,7 +2,7 @@
   "functions": {
     "api/editor/generate/route.js": {
       "runtime": "fluid",
-      "maxDuration": 900
+      "maxDuration": 800
     }
   }
 }
