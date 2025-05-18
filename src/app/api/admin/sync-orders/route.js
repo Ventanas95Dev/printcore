@@ -1,7 +1,12 @@
 import { NextResponse } from 'next/server'
 import { getDb } from '@/lib/db/db'
+import { requireAdmin } from '@/lib/auth/requireAdmin'
 
 export async function POST(req) {
+  const user = await requireAdmin()
+  if (!user) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
   try {
     const { since } = await req.json()
 

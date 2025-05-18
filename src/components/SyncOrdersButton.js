@@ -13,7 +13,7 @@ export function SyncOrdersButton({ orders }) {
         ? new Date(Math.max(...orders.map((o) => new Date(o.createdAt).getTime()))).toISOString()
         : null
 
-      const res = await fetch('/api/sync-orders', {
+      const res = await fetch('/api/adminsync-orders', {
         method: 'POST',
         body: JSON.stringify({ since: latest }),
       })

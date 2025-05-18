@@ -7,6 +7,7 @@ import { getDb } from '@/lib/db/db'
 import { Pagination } from '@/components/Pagination'
 import { ELink } from '@/components/ELink'
 import { CalendarIcon } from 'lucide-react'
+import { ShowAllOrdersToggle } from '@/components/ShowAllOrdersToggle'
 
 const ORDERS_PER_PAGE = 10
 
@@ -16,12 +17,16 @@ export default async function AdminOrdersPage(props) {
   const searchParams = await props.searchParams
   const pageParam = searchParams.page
   const currentPage = Math.max(parseInt(pageParam || '1', 10), 1)
+  const showAll = searchParams?.showall === 'true'
 
   const totalOrders = await ordersCollection.countDocuments()
   const totalPages = Math.ceil(totalOrders / ORDERS_PER_PAGE)
 
+  const filter = showAll ? {} : { paymentStatus: 'paid' }
+
+  const totalCount = await ordersCollection.countDocuments(filter)
   const ordersData = await ordersCollection
-    .find({})
+    .find(filter)
     .sort({ createdAt: -1 })
     .skip((currentPage - 1) * ORDERS_PER_PAGE)
     .limit(ORDERS_PER_PAGE)
@@ -64,8 +69,14 @@ export default async function AdminOrdersPage(props) {
   return (
     <main className="container py-6 space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold tracking-tight">Orders</h1>
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">Orders</h1>
+          <p className="text-sm text-muted-foreground">
+            {totalCount} {showAll ? 'total' : 'paid'} orders
+          </p>
+        </div>
         <div className="flex gap-2">
+          <ShowAllOrdersToggle />
           <SyncPaymentsButton fromDate={latestPaidOrderDate} />
         </div>
       </div>
@@ -125,7 +136,6 @@ export default async function AdminOrdersPage(props) {
                       </div>
                     </div>
                   ))}
-
                 </div>
               </CardContent>
               <CardFooter className="p-4 pt-0 flex justify-between">
@@ -133,7 +143,9 @@ export default async function AdminOrdersPage(props) {
                   {fullyBatched ? (
                     <span className="text-green-600 font-medium">✅ Fully batched</span>
                   ) : (
-                    <span>{batchedQty} of {totalQty} items batched</span>
+                    <span>
+                      {batchedQty} of {totalQty} items batched
+                    </span>
                   )}
                 </p>
                 <ELink href={`/admin/orders/${order._id}`} prefetch={false}>

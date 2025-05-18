@@ -1,10 +1,16 @@
 import Stripe from 'stripe'
 import { getDb } from '@/lib/db/db'
 import { ObjectId } from 'mongodb'
+import { requireAdmin } from '@/lib/auth/requireAdmin'
+import { NextResponse } from 'next/server'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET)
 
 export async function POST() {
+  const user = await requireAdmin()
+  if (!user) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
   const db = await getDb()
   const orders = db.collection('orders')
 

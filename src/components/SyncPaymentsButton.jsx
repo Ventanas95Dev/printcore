@@ -19,7 +19,7 @@ export function SyncPaymentsButton({ fromDate }) {
 
     while (!done) {
       setMessage(`🔁 Sync round ${page}...`)
-      const res = await fetch('/api/orders/sync-payments', {
+      const res = await fetch('/api/admin/orders/sync-payments', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ fromDate: latestSync }),
