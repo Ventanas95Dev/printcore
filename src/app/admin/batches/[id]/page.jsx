@@ -40,6 +40,12 @@ export default async function BatchDetailPage(props) {
         </p>
       )}
 
+      {batch.printFileUrl && window?.electronAPI && (
+        <Button onClick={() => window?.electronAPI?.sendToPrinter(batch.printFileUrl)}>
+          🖨️ Send to printer
+        </Button>
+      )}
+
       {batch.previewImageUrl && (
         <div>
           <h2 className="text-lg font-medium mt-6 mb-2">Preview</h2>
