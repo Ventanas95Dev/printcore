@@ -6,6 +6,9 @@ import { ObjectId } from 'mongodb'
 import { generateBatchFile } from '@/app/actions/generateBatchFile'
 import { notFound } from 'next/navigation'
 import { CreatePrintFileButton } from '@/components/CreatePrintFileButton'
+import { SendToPrinterButton } from '@/components/SendToPrinterButton'
+
+const isServer = typeof window === 'undefined'
 
 export default async function BatchDetailPage(props) {
   const params = await props.params
@@ -40,12 +43,6 @@ export default async function BatchDetailPage(props) {
         </p>
       )}
 
-      {batch.printFileUrl && window?.electronAPI && (
-        <Button onClick={() => window?.electronAPI?.sendToPrinter(batch.printFileUrl)}>
-          🖨️ Send to printer
-        </Button>
-      )}
-
       {batch.previewImageUrl && (
         <div>
           <h2 className="text-lg font-medium mt-6 mb-2">Preview</h2>
@@ -69,6 +66,8 @@ export default async function BatchDetailPage(props) {
           </a>
         </div>
       )}
+
+      <SendToPrinterButton printFileUrl={batch?.printFileUrl} batchId={batch?._id?.toString()} />
 
       <div className="space-y-2">
         {grid.map((row, rowIndex) => (
