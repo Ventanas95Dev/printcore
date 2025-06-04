@@ -5,7 +5,7 @@ import { randomUUID } from 'crypto'
 import { generateImageBuffer } from '@/helpers/generateImageBuffer'
 import { uploadToS3 } from '@/helpers/uploadToS3'
 
-export const maxDuration = 800; // This function can run for a maximum of 5 seconds
+export const maxDuration = 800
 
 export async function POST(req) {
   try {
@@ -25,12 +25,24 @@ export async function POST(req) {
 
     for (const item of items) {
       const images = item.images
+      const texts = item.texts
 
-      const fullBuffer = await generateImageBuffer(images, { width: 2362, height: 2008 })
+      const fullBuffer = await generateImageBuffer({
+        images,
+        texts,
+        backgroundColor: item.backgroundColor,
+        scale: 4,
+      })
       const fullFilename = `orders/${orderId}/${item.id}/${randomUUID()}-full.png`
       const fullUrl = await uploadToS3(fullBuffer, fullFilename)
 
-      const previewBuffer = await generateImageBuffer(images, { width: 600, height: 510 })
+      console.log(item)
+      const previewBuffer = await generateImageBuffer({
+        images,
+        backgroundColor: item.backgroundColor,
+        texts,
+        scale: 1,
+      })
       const previewFilename = `orders/${orderId}/${item.id}/${randomUUID()}-preview.png`
       const previewUrl = await uploadToS3(previewBuffer, previewFilename)
 
@@ -56,7 +68,6 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Failed to generate image' }, { status: 500 })
   }
 }
-
 
 async function updateOrderWithItems({ orderId, items }) {
   const db = await getDb()
