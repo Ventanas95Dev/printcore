@@ -37,7 +37,7 @@ export async function generateImageBuffer({
 
   // Bilder
   for (const img of images) {
-    const image = await loadImage(img.url)
+    const image = await loadImage(img.uploadedUrl)
     const konvaImage = new Konva.Image({
       image,
       x: img.x * SCALE + (img.width * SCALE) / 2,
