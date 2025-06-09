@@ -46,7 +46,7 @@ export async function POST(req) {
       },
     },
     success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/thank-you?orderId=${orderId}`,
-    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/editor?cancelled=true`,
+    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
   })
 
   await db.collection('orders').updateOne(

@@ -35,7 +35,7 @@ export async function getDb() {
   if (dbInstance) return dbInstance
 
   const client = await clientPromise
-  dbInstance = client.db('elobina ')
+  dbInstance = client.db('elobina')
   return dbInstance
 }
 

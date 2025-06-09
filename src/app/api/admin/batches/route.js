@@ -21,7 +21,7 @@ export async function POST(req) {
     const batchesCollection = db.collection('batches')
 
     const queuedOrders = await ordersCollection
-      .find({ status: 'queued', paymentStatus: 'paid' })
+      .find({ paymentStatus: 'paid' })
       .sort({ createdAt: 1 })
       .toArray()
 

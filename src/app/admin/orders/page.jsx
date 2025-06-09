@@ -1,12 +1,11 @@
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { CreateBatchButton } from '@/components/CreateBatchsButtons'
 import { SyncPaymentsButton } from '@/components/SyncPaymentsButton'
 import { getDb } from '@/lib/db/db'
 import { Pagination } from '@/components/Pagination'
 import { ELink } from '@/components/ELink'
-import { CalendarIcon } from 'lucide-react'
+import { CalendarIcon, CheckCircle, XCircle } from 'lucide-react'
 import { ShowAllOrdersToggle } from '@/components/ShowAllOrdersToggle'
 
 const ORDERS_PER_PAGE = 10
@@ -51,32 +50,17 @@ export default async function AdminOrdersPage(props) {
       hour12: true,
     }).format(date)
 
-  const getStatusVariant = (status) => {
-    switch (status) {
-      case 'queued':
-        return 'secondary'
-      case 'processing':
-        return 'warning'
-      case 'completed':
-        return 'success'
-      case 'cancelled':
-        return 'destructive'
-      default:
-        return 'outline'
-    }
-  }
-
   return (
     <main className="container py-6 space-y-6">
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Orders</h1>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground pb-2">
             {totalCount} {showAll ? 'total' : 'paid'} orders
           </p>
+          <ShowAllOrdersToggle />
         </div>
         <div className="flex gap-2">
-          <ShowAllOrdersToggle />
           <SyncPaymentsButton fromDate={latestPaidOrderDate} />
         </div>
       </div>
@@ -86,6 +70,7 @@ export default async function AdminOrdersPage(props) {
           const totalQty = order.items.reduce((sum, item) => sum + item.quantity, 0)
           const batchedQty = order.items.reduce((sum, item) => sum + (item.batchedQuantity || 0), 0)
           const fullyBatched = batchedQty === totalQty
+          const isPaid = order.paymentStatus === 'paid'
           return (
             <Card key={order._id} className="overflow-hidden transition-all hover:shadow-md">
               <CardHeader className="p-4 pb-0">
@@ -109,11 +94,23 @@ export default async function AdminOrdersPage(props) {
                       )}
                     </div>
                   </div>
-                  <div className="flex flex-col items-end gap-1">
-                    <Badge variant={getStatusVariant(order.status)} className="capitalize">
-                      {order.status}
+                  <div className="flex items-center gap-1">
+                    <Badge 
+                      variant={isPaid ? 'success' : 'destructive'} 
+                      className="flex items-center gap-1"
+                    >
+                      {isPaid ? (
+                        <>
+                          <CheckCircle className="h-3 w-3" />
+                          <span>Paid</span>
+                        </>
+                      ) : (
+                        <>
+                          <XCircle className="h-3 w-3" />
+                          <span>Unpaid</span>
+                        </>
+                      )}
                     </Badge>
-                    <p className="text-xs text-muted-foreground">{order.paymentStatus}</p>
                   </div>
                 </div>
               </CardHeader>

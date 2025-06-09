@@ -46,14 +46,16 @@ export function SyncPaymentsButton({ fromDate }) {
   }
 
   return (
-    <div className="space-y-2">
-      <button
-        onClick={() => syncPaymentsUntilDone({ fromDate, delayMs: 1000 })}
-        disabled={isSyncing}
-        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50"
-      >
-        {isSyncing ? 'Syncing...' : 'Sync Payments'}
-      </button>
+    <div className="space-y-2 flex flex-col ">
+      <div className={"flex justify-end"}>
+        <button
+          onClick={() => syncPaymentsUntilDone({ fromDate, delayMs: 1000 })}
+          disabled={isSyncing}
+          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50"
+        >
+          {isSyncing ? 'Syncing...' : 'Sync Payments'}
+        </button>
+      </div>
       {message && <div className="text-sm text-gray-700">{message}</div>}
     </div>
   )

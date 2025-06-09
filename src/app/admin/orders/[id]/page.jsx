@@ -26,32 +26,30 @@ export default async function OrderDetailPage(props) {
   return (
     <main className="container py-6 space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Orderdetaljer</h1>
+        <h1 className="text-2xl font-bold">Order details</h1>
         <ELink href="/admin/orders">
-          <Button variant="outline">← Tillbaka</Button>
+          <Button variant="outline">← Go back</Button>
         </ELink>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Orderinformation</CardTitle>
+          <CardTitle>Order information</CardTitle>
         </CardHeader>
         <CardContent className="grid sm:grid-cols-2 gap-4 text-sm">
           <div>
             <p><strong>Order-ID:</strong> {order._id.toString()}</p>
-            <p><strong>Status:</strong> <Badge>{order.status}</Badge></p>
-            <p><strong>Betalning:</strong> <Badge variant="outline">{order.paymentStatus}</Badge></p>
-            <p><strong>Renderstatus:</strong> <Badge variant="outline">{order.renderStatus}</Badge></p>
-            <p><strong>Skapad:</strong> {formatDate(order.createdAt)}</p>
-            {order.paidAt && <p><strong>Betald:</strong> {formatDate(order.paidAt)}</p>}
+            <p><strong>Created:</strong> {formatDate(order.createdAt)}</p>
             <p><strong>Uppdaterad:</strong> {formatDate(order.updatedAt)}</p>
+            <p><strong>PaymentStatus:</strong> <Badge variant="outline">{order.paymentStatus}</Badge></p>
+            {order.paidAt && <p><strong>Paid:</strong> {formatDate(order.paidAt)}</p>}
           </div>
           <div>
-            <p><strong>Kund:</strong> {order.customerName}</p>
+            <p><strong>Customer::</strong> {order.customerName}</p>
             <p><strong>Email:</strong> {order.customerEmail}</p>
             {order.address && (
               <>
-                <p><strong>Adress:</strong></p>
+                <p><strong>Address:</strong></p>
                 <p>{order.address.line1}</p>
                 {order.address.line2 && <p>{order.address.line2}</p>}
                 <p>{order.address.postal_code} {order.address.city}</p>
@@ -61,7 +59,7 @@ export default async function OrderDetailPage(props) {
             {order.stripeReceiptUrl && (
               <p>
                 <a href={order.stripeReceiptUrl} target="_blank" className="text-blue-600 underline">
-                  Visa kvitto
+                  Show receipt
                 </a>
               </p>
             )}
@@ -80,7 +78,7 @@ export default async function OrderDetailPage(props) {
 
       <Card>
         <CardHeader>
-          <CardTitle>Produkter</CardTitle>
+          <CardTitle>Products</CardTitle>
         </CardHeader>
         <CardContent className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {order.items?.map((item, i) => (
@@ -107,7 +105,7 @@ export default async function OrderDetailPage(props) {
                   target="_blank"
                   className="text-blue-600 underline block"
                 >
-                  Printfil →
+                  Print file →
                 </a>
               )}
               {item.previewUrl && (
@@ -116,7 +114,7 @@ export default async function OrderDetailPage(props) {
                   target="_blank"
                   className="text-blue-600 underline block"
                 >
-                  Previewfil →
+                  Preview file →
                 </a>
               )}
             </div>

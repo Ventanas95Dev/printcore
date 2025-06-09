@@ -38,11 +38,7 @@ async function createNewOrder(db) {
 
   const order = {
     customerName: 'Unknown',
-    platformOrderId: null,
-    status: 'queued',
     paymentStatus: 'unpaid',
-    renderStatus: 'pending',
-    editorPreviewUrl: null,
     createdAt: now,
     updatedAt: now,
     items: [],
