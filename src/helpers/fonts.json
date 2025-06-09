@@ -1,0 +1,2048 @@
+[
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-ExtraLightItalic.ttf",
+    "weight": "200",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-Thin.ttf",
+    "weight": "100",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_18pt-ThinItalic.ttf",
+    "weight": "100",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-ExtraLightItalic.ttf",
+    "weight": "200",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-Thin.ttf",
+    "weight": "100",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_24pt-ThinItalic.ttf",
+    "weight": "100",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-ExtraLightItalic.ttf",
+    "weight": "200",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-Thin.ttf",
+    "weight": "100",
+    "style": "normal"
+  },
+  {
+    "family": "Inter",
+    "file": "Inter/Inter_28pt-ThinItalic.ttf",
+    "weight": "100",
+    "style": "italic"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-Thin.ttf",
+    "weight": "100",
+    "style": "normal"
+  },
+  {
+    "family": "Lato",
+    "file": "Lato/Lato-ThinItalic.ttf",
+    "weight": "100",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_120pt_SemiCondensed-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_24pt_SemiCondensed-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_36pt_SemiCondensed-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_48pt_SemiCondensed-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Merriweather",
+    "file": "Merriweather/Merriweather_96pt_SemiCondensed-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-ExtraLightItalic.ttf",
+    "weight": "200",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-Thin.ttf",
+    "weight": "100",
+    "style": "normal"
+  },
+  {
+    "family": "Montserrat",
+    "file": "Montserrat/Montserrat-ThinItalic.ttf",
+    "weight": "100",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-ExtraLightItalic.ttf",
+    "weight": "200",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Nunito",
+    "file": "Nunito/Nunito-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_Condensed-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Open_Sans",
+    "file": "Open_Sans/OpenSans_SemiCondensed-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Oswald",
+    "file": "Oswald/Oswald-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Oswald",
+    "file": "Oswald/Oswald-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Oswald",
+    "file": "Oswald/Oswald-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Oswald",
+    "file": "Oswald/Oswald-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Oswald",
+    "file": "Oswald/Oswald-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Oswald",
+    "file": "Oswald/Oswald-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Playfair_Display",
+    "file": "Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Quicksand",
+    "file": "Quicksand/Quicksand-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Quicksand",
+    "file": "Quicksand/Quicksand-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Quicksand",
+    "file": "Quicksand/Quicksand-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Quicksand",
+    "file": "Quicksand/Quicksand-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Quicksand",
+    "file": "Quicksand/Quicksand-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-ExtraLightItalic.ttf",
+    "weight": "200",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-Thin.ttf",
+    "weight": "100",
+    "style": "normal"
+  },
+  {
+    "family": "Raleway",
+    "file": "Raleway/Raleway-ThinItalic.ttf",
+    "weight": "100",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-Black.ttf",
+    "weight": "900",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-BlackItalic.ttf",
+    "weight": "900",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-ExtraBold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-ExtraBoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-ExtraLight.ttf",
+    "weight": "200",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-ExtraLightItalic.ttf",
+    "weight": "200",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-SemiBold.ttf",
+    "weight": "600",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-SemiBoldItalic.ttf",
+    "weight": "600",
+    "style": "italic"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-Thin.ttf",
+    "weight": "100",
+    "style": "normal"
+  },
+  {
+    "family": "Roboto",
+    "file": "Roboto/Roboto-ThinItalic.ttf",
+    "weight": "100",
+    "style": "italic"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-Bold.ttf",
+    "weight": "700",
+    "style": "normal"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-BoldItalic.ttf",
+    "weight": "700",
+    "style": "italic"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-Italic.ttf",
+    "weight": "400",
+    "style": "italic"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-Light.ttf",
+    "weight": "300",
+    "style": "normal"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-LightItalic.ttf",
+    "weight": "300",
+    "style": "italic"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-Medium.ttf",
+    "weight": "500",
+    "style": "normal"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-MediumItalic.ttf",
+    "weight": "500",
+    "style": "italic"
+  },
+  {
+    "family": "Ubuntu",
+    "file": "Ubuntu/Ubuntu-Regular.ttf",
+    "weight": "400",
+    "style": "normal"
+  }
+]

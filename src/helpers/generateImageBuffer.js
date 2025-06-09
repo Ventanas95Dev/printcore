@@ -1,9 +1,8 @@
 import { createCanvas as nodeCreateCanvas, loadImage, registerFont } from 'canvas'
-import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import Konva from 'konva'
-
+import fonts from './fonts.json'
 // Fix __dirname i ES-moduler
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -81,50 +80,19 @@ export async function generateImageBuffer({
   return buffer
 }
 
-function inferFontWeight(fileName) {
-  const w = fileName.toLowerCase()
-  if (w.includes('thin')) return '100'
-  if (w.includes('extralight')) return '200'
-  if (w.includes('light')) return '300'
-  if (w.includes('regular')) return '400'
-  if (w.includes('medium')) return '500'
-  if (w.includes('semibold')) return '600'
-  if (w.includes('bold')) return '700'
-  if (w.includes('extrabold') || w.includes('black')) return '800'
-  return '400' // fallback
-}
-
-function inferFontStyle(fileName) {
-  const w = fileName.toLowerCase()
-  if (w.includes('italic')) return 'italic'
-  return 'normal' // fallback
-}
 
 export function registerFonts() {
-  const fontRoot = path.join(__dirname, 'fonts') // din fontmapp
+  const fontRoot = path.join(process.cwd(), 'public', 'fonts')
 
-  const families = fs.readdirSync(fontRoot)
-  for (const family of families) {
-    const familyPath = path.join(fontRoot, family)
-
-    // ⛔️ hoppa över filer
-    if (!fs.statSync(familyPath).isDirectory()) continue
-
-    const files = fs.readdirSync(familyPath)
-
-    for (const file of files) {
-      if (file.endsWith('.ttf') || file.endsWith('.otf')) {
-        const fontWeight = inferFontWeight(file)
-        const fontStyle = inferFontStyle(file)
-        console.log(`Registering font ${file} for family ${family} with weight ${fontWeight} and style ${fontStyle}`)
-        registerFont(path.join(familyPath, file), {
-          family: family,
-          weight: fontWeight,
-          style: fontStyle,
-        })
-      }
-    }
+  for (const font of fonts) {
+    // console.log(
+    //   `Registering font ${font.file} for family ${font.family} with weight ${font.weight} and style ${font.style}`
+    // )
+    registerFont(path.join(fontRoot, font.file), {
+      family: font.family,
+      weight: font.weight,
+      style: font.style,
+    })
   }
 }
-
 registerFonts()

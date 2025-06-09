@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "generate-fonts-json": "node scripts/generate-fonts-json.mjs",
+    "build": "npm run generate-fonts-json && next build",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
