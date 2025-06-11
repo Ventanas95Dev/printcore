@@ -5,7 +5,7 @@ import { getDb } from '@/lib/db/db'
 const stripe = new Stripe(process.env.STRIPE_SECRET)
 
 export async function POST(req) {
-  const { orderId } = await req.json()
+  const { orderId, locale } = await req.json()
 
   if (!orderId || !ObjectId.isValid(orderId)) {
     return new Response(JSON.stringify({ error: 'Missing or invalid orderId' }), { status: 400 })
@@ -45,8 +45,8 @@ export async function POST(req) {
         orderId,
       },
     },
-    success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/thank-you?orderId=${orderId}`,
-    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+    success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/thank-you?orderId=${orderId}`,
+    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/cart`,
   })
 
   await db.collection('orders').updateOne(
