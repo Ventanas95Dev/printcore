@@ -26,7 +26,8 @@ export async function POST(req) {
   console.log('✅ Stripe webhook received:', event)
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object
-    const orderId = session.metadata?.orderId
+    const paymentIntent = await stripe.paymentIntents.retrieve(session.payment_intent)
+    const orderId = paymentIntent.metadata?.orderId
     const customer = session.customer_details
     if (orderId) {
       const db = await getDb()
