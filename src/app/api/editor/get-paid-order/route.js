@@ -12,9 +12,5 @@ export async function POST(req) {
   const db = await getDb()
   const order = await db.collection('orders').findOne({ _id: new ObjectId(orderId) })
 
-  if (order?.paymentStatus === 'paid') {
-    return NextResponse.json({ order })
-  }
-
-  return new Response(JSON.stringify({ error: 'Order not paid' }), { status: 400 })
+  return NextResponse.json({ order })
 }
