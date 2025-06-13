@@ -78,7 +78,7 @@ const calculateNetUnitAmount = (grossSEK, vatPercent = 25) => {
 }
 
 const getPrice = ({ locale, totalItems }) => {
-  if (locale === 'sv') {
+  if (locale === 'se') {
     if (totalItems > 300) {
       return 17.5
     } else if (totalItems > 150) {
@@ -105,7 +105,7 @@ const getPrice = ({ locale, totalItems }) => {
 
 const getCurrency = ({ locale }) => {
   switch (locale) {
-    case 'sv':
+    case 'se':
       return 'sek'
     default:
       return 'eur'
@@ -113,7 +113,7 @@ const getCurrency = ({ locale }) => {
 }
 
 const getShippingRate = ({ locale, totalPrice }) => {
-  if (locale === 'sv') {
+  if (locale === 'se') {
     if (totalPrice > 30000) {
       return 'shr_1RZZG9P9wNW4I4PwGJXt8Zz8'
     }
