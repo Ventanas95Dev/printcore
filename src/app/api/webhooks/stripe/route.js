@@ -23,6 +23,7 @@ export async function POST(req) {
     return new Response('Webhook Error', { status: 400 })
   }
 
+  console.log('✅ Stripe webhook received:', event)
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object
     const orderId = session.metadata?.orderId
