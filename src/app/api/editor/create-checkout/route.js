@@ -56,8 +56,8 @@ export async function POST(req) {
         orderId,
       },
     },
-    success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/thank-you?orderId=${orderId}`,
-    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/cart`,
+    success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/editor/thank-you?orderId=${orderId}`,
+    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/editor/cart`,
   })
 
   await db.collection('orders').updateOne(
