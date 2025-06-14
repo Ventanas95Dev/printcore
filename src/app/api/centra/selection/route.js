@@ -12,13 +12,37 @@ export async function GET(req) {
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 const getRightLocation = (country) => {
   if (country === 'SE') {
-    return { name: country, country: 'SE', shipTo: true, market: 1, pricelist: 2, language: 'sv' }
+    return {
+      name: country,
+      country: 'SE',
+      shipTo: true,
+      market: 1,
+      pricelist: 2,
+      language: 'sv',
+      currency: 'SEK',
+    }
   }
   if (country === 'DA') {
-    return { name: country, country: 'DA', shipTo: true, market: 1, pricelist: 3, language: 'dk' }
+    return {
+      name: country,
+      country: 'DA',
+      shipTo: true,
+      market: 1,
+      pricelist: 3,
+      language: 'dk',
+      currency: 'DKK',
+    }
   }
   if (country === 'NO') {
-    return { name: country, country: 'NO', shipTo: true, market: 1, pricelist: 4, language: 'no' }
+    return {
+      name: country,
+      country: 'NO',
+      shipTo: true,
+      market: 1,
+      pricelist: 4,
+      language: 'no',
+      currency: 'NOK',
+    }
   }
 
   const isEEA = isEEACountry(country) // true
@@ -30,10 +54,19 @@ const getRightLocation = (country) => {
       market: 1,
       pricelist: 1,
       language: 'en',
+      currency: 'EUR',
     }
   }
 
-  return { name: country, country: country, shipTo: true, market: 1, pricelist: 5, language: 'en' }
+  return {
+    name: country || 'US',
+    country: country || 'US',
+    shipTo: true,
+    market: 1,
+    pricelist: 5,
+    language: 'en',
+    currency: 'USD',
+  }
 }
 
 function isEEACountry(countryCode) {
