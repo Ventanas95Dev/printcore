@@ -13,6 +13,16 @@ export async function GET(req) {
         name: 'Swedish',
         default: false,
       },
+      {
+        language: 'dk',
+        name: 'Danish',
+        default: false,
+      },
+      {
+        language: 'no',
+        name: 'Norwegian',
+        default: false,
+      },
     ],
   })
 }
